@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>로마 생활 가이드 | Sopravvivere in Italia</title>
+  <meta name="description" content="로마 생활 정보: 행정, 교통, 주거, 문화 생활 및 한국인을 위한 실용 정보" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="icon-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-nav" id="menuBtn">☰</button>
+      <a class="brand" href="../index.html">
+        <span class="brand-title">Sopravvivere</span>
+        <span class="brand-sub">in Italia</span>
+      </a>
+      <div class="header-right">
+        <span class="badge" aria-label="이탈리아">🇮🇹</span>
+      </div>
+    </div>
+    <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+      <div class="container nav-inner">
+        <a href="./settlement.html">정착</a>
+        <a href="./life.html">생활</a>
+        <a href="./italian.html">이탈리아어 표현</a>
+        <a aria-current="page" href="./city-roma.html">도시</a>
+        <a href="../about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-kicker">도시별 정보</p>
+        <h1 class="page-title">로마 생활 가이드</h1>
+        <p class="page-desc">이탈리아의 수도, 로마에서의 생활 정보</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
+        <h2>도시 소개</h2>
+        <p>로마는 이탈리아의 수도이자 역사와 문화의 중심지입니다. 2,700년 이상의 역사가 곳곳에 남아있으며, 관광객과 현지인이 함께 살아가는 독특한 도시입니다. 행정 업무 처리가 번거로울 수 있으나, 풍부한 문화 생활과 따뜻한 날씨가 매력입니다.</p>
+
+        <h2>생활 특징</h2>
+        <ul>
+          <li><strong>행정:</strong> 비자, 체류 관련 업무 필수. 예약 시스템 복잡.</li>
+          <li><strong>날씨:</strong> 지중해성 기후. 여름 매우 더움(35도+), 겨울 온화</li>
+          <li><strong>문화:</strong> 미술관, 갤러리, 문화 행사 풍부</li>
+          <li><strong>생활비:</strong> 밀라노보다 낮으나 중부 도시 중 높은 편</li>
+          <li><strong>방언:</strong> 로마 방언 특색 있음. 표준 이탈리아어 추천</li>
+        </ul>
+
+        <h2>교통</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">지하철 (Metropolitana)</h3>
+              <p class="card-desc">A선(빨강), B선(파랑), C선(초록) 3개 노선. 도시 남부-북부 주요 축.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">버스 (Autobus)</h3>
+              <p class="card-desc">가장 광범위한 운행. 야간 버스도 있음. 번호 확인 필수.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">트램 (Tram)</h3>
+              <p class="card-desc">주로 외곽 지역 연결. 시내 중심부는 지하철 추천.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">정기권</h3>
+              <p class="card-desc">월 정기권 €35(1 Zone). 주말 패스 €24</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>마트</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Conad</h3>
+              <p class="card-desc">로마에서 가장 흔한 마트. 다양한 위치. 가성비 좋음.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Carrefour</h3>
+              <p class="card-desc">대형 마트. 중앙역 근처. 할인 행사 자주 있음.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Esselunga</h3>
+              <p class="card-desc">프리미엄 마트. 품질 좋음. 다양한 식품.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">지역 시장 (Mercato)</h3>
+              <p class="card-desc">신선한 채소, 과일 싼 가격에 구입 가능. 아침 시간 추천.</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>주거</h2>
+        <ul>
+          <li><strong>인기 지역:</strong> Centro (중심부), Testaccio, Trastevere, San Lorenzo</li>
+          <li><strong>월세 범위:</strong> 스튜디오 €500~800, 1룸 €700~1100</li>
+          <li><strong>계약 기간:</strong> 3+2년, 4+4년이 일반적</li>
+          <li><strong>보증금:</strong> 월세 2개월분 (계약 등록 후 반환)</li>
+          <li><strong>중요:</strong> 계약 등록(Registrazione) 확인 필수</li>
+          <li><strong>플랫폼:</strong> Immobiliare.it, Subito.it, 한인 Facebook 그룹</li>
+        </ul>
+
+        <h2>통신</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">TIM</h3>
+              <p class="card-desc">가장 신뢰성 있는 통신사. 로마 전역 신호 좋음. €20~35/월</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Vodafone</h3>
+              <p class="card-desc">가성비 우수. 유학생 할인 있을 수 있음. €15~28/월</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Iliad</h3>
+              <p class="card-desc">저가 옵션. 온라인 약정. €6~18/월</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">ho. mobile</h3>
+              <p class="card-desc">매우 저가. Vodafone 네트워크 사용. €3~12/월</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>병원 및 약국</h2>
+        <ul>
+          <li><strong>국립의료보험(SSN):</strong> 유럽 주민 등록 가능. 기본 서비스 무료</li>
+          <li><strong>종합병원:</strong> Ospedale Gemelli, Policlinico Umberto I</li>
+          <li><strong>약국:</strong> 녹십자 표시. 처방약(Medicinale) 구분 판매</li>
+          <li><strong>의료비:</strong> 진료 €40~80 (사립), 약국 €5~20</li>
+          <li><strong>응급실:</strong> Pronto Soccorso (112 전화)</li>
+          <li><strong>치과:</strong> €60~120/진료. 로마 내 많은 치과 존재</li>
+        </ul>
+
+        <h2>행정 (Amministrazione)</h2>
+        <ul>
+          <li><strong>비자 갱신:</strong> Questura di Roma (중앙 경찰청). 웹 예약 필수</li>
+          <li><strong>체류 신고(Soggiorno):</strong> Carabinieri 지구대 방문</li>
+          <li><strong>세금번호(Codice Fiscale):</strong> Agenzia delle Entrate 또는 온라인</li>
+          <li><strong>대사관:</strong> 한국 대사관 (Roma). 여권 갱신, 인증 업무</li>
+          <li><strong>은행 계좌:</strong> IBAN, BIC 번호 필요. 서류 많음</li>
+        </ul>
+
+        <h2>주의사항</h2>
+        <ul>
+          <li>관광지(콜로세움, 바티칸 등) 주변에서 소매치기 매우 심함</li>
+          <li>관광객 많은 지역은 음식값, 물품값이 매우 비쌈</li>
+          <li>밤 늦게 외로운 골목 피하기 (특히 테르미니 역 주변)</li>
+          <li>자전거 탈 때 바닥 유물(돌 등)에 주의</li>
+          <li>파업(Sciopero) 자주 발생. 사전 확인 필수</li>
+          <li>행정 업무 예약 미리 해야 함 (당일 방문 불가)</li>
+        </ul>
+
+        <h2>생활 팁</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🏛️ 행정 팁</h3>
+              <p class="card-desc">모든 예약은 온라인으로. 영수증 잘 보관. 서류 복사본 여러 장 준비. 오전 방문 추천 (대기 시간 짧음).</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🚇 교통 팁</h3>
+              <p class="card-desc">택시 미터기 확인하기. 우버, 무빗 사용 권장. 자정 이후는 야간 버스 요금 할증.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🌞 날씨 팁</h3>
+              <p class="card-desc">7~8월은 매우 더움(35도+). 그 시기 로마는 관광객 감소. 외출 전 햇빛, 자외선 차단 필수.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🎭 문화 팁</h3>
+              <p class="card-desc">미술관 많음. 학생증으로 할인 가능. 토요일 저녁 일부 박물관 무료. 공연 표 사기 쉬움.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🏪 생활 팁</h3>
+              <p class="card-desc">주말, 공휴일 가게 폐점 많음. 미리 장보기. 일부 마트는 14시~16시 휴무 (이탈리아 풍습).</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>구글맵에서 보기</h2>
+        <p>
+          <a class="btn btn-primary" href="https://maps.google.com/maps?q=Roma,+Italia" target="_blank" rel="noopener noreferrer">
+            🗺️ Google Maps에서 로마 지도 보기
+          </a>
+        </p>
+
+        <div class="back-actions">
+          <a class="btn btn-secondary" href="../index.html">메인으로</a>
+          <a class="btn btn-primary" href="./city-siena.html">시에나 가이드</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="푸터 링크">
+        <a href="../about.html">About</a>
+        <a href="../about.html#contact">문의</a>
+        <a href="./life.html">생활 정보</a>
+      </nav>
+      <p class="footer-copy">© 2026 Sopravvivere in Italia</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

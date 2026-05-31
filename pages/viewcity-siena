@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>시에나 생활 가이드 | Sopravvivere in Italia</title>
+  <meta name="description" content="시에나 생활 정보: 작은 도시에서의 학생 생활, 교통, 문화, 대학 정보" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="icon-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-nav" id="menuBtn">☰</button>
+      <a class="brand" href="../index.html">
+        <span class="brand-title">Sopravvivere</span>
+        <span class="brand-sub">in Italia</span>
+      </a>
+      <div class="header-right">
+        <span class="badge" aria-label="이탈리아">🇮🇹</span>
+      </div>
+    </div>
+    <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+      <div class="container nav-inner">
+        <a href="./settlement.html">정착</a>
+        <a href="./life.html">생활</a>
+        <a href="./italian.html">이탈리아어 표현</a>
+        <a aria-current="page" href="./city-siena.html">도시</a>
+        <a href="../about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-kicker">도시별 정보</p>
+        <h1 class="page-title">시에나 생활 가이드</h1>
+        <p class="page-desc">토스카나의 작은 보석, 시에나에서의 학생 생활</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
+        <h2>도시 소개</h2>
+        <p>시에나는 이탈리아 중부 토스카나 지역에 위치한 작은 역사도시입니다. 약 54,000명이 거주하는 아담한 도시로 대학생이 많고, 중세 건축물이 잘 보존되어 있습니다. 조용한 환경과 저렴한 생활비가 장점이며, 한국 유학생들이 점차 늘어나고 있습니다.</p>
+
+        <h2>생활 특징</h2>
+        <ul>
+          <li><strong>인구:</strong> 약 54,000명 (대학생 포함 약 20,000명)</li>
+          <li><strong>생활비:</strong> 이탈리아 대도시 중 가장 저렴</li>
+          <li><strong>대학:</strong> University of Siena (UNISI). 교환학생, 정규학생 많음</li>
+          <li><strong>언어:</strong> 표준 이탈리아어. 의사소통 비교적 쉬움</li>
+          <li><strong>방식:</strong> 작은 도시라 모두가 아는 느낌. 커뮤니티 중요</li>
+        </ul>
+
+        <h2>교통</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">버스 (Autobus)</h3>
+              <p class="card-desc">TIEMME 회사 운영. 도시 내 버스로 대부분 이동 가능. €1.2/편, 월 정기권 €30</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">자전거 (Bicicletta)</h3>
+              <p class="card-desc">가장 인기 있는 이동 수단. 도시 자전거 공유 서비스(BiSi). €20~30/월</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">도보</h3>
+              <p class="card-desc">도시가 작아서 걸어서 이동 가능. 중세 석조 도로로 경사 있음.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">기차 (Treno)</h3>
+              <p class="card-desc">인근 도시(피렌체, 볼로냐) 이동 시 이용. 역에서 도보 10분</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>마트</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Conad</h3>
+              <p class="card-desc">도시 내 가장 접근하기 쉬운 마트. 중심부 위치. 가성비 좋음.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Carrefour Express</h3>
+              <p class="card-desc">중심부 소형 마트. 편의점 수준. 신속한 쇼핑 가능.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">지역 시장 (Mercato)</h3>
+              <p class="card-desc">신선한 채소, 과일. 매주 목요일, 토요일. 현지인 가격.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">대형마트(교외)</h3>
+              <p class="card-desc">Coop이나 마트 (도시 외곽). 버스로 15분. 저렴한 가격.</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>주거</h2>
+        <ul>
+          <li><strong>인기 지역:</strong> Camollia (대학 근처), Cità (중심부), San Martino</li>
+          <li><strong>월세 범위:</strong> 스튜디오 €250~400, 1룸 €350~550, 룸셰어 €150~300</li>
+          <li><strong>대학 기숙사:</strong> €250~380/월. 신청 경쟁 심함</li>
+          <li><strong>계약:</strong> 학생의 경우 짧은 계약(6~12개월) 가능</li>
+          <li><strong>플랫폼:</strong> Immobiliare.it, 대학 게시판, Facebook 한인 그룹</li>
+          <li><strong>특징:</strong> 도시가 작아서 집 찾기 비교적 쉬움</li>
+        </ul>
+
+        <h2>통신</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">TIM</h3>
+              <p class="card-desc">가장 신뢰성 있음. 신호 안정적. €15~30/월</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Vodafone</h3>
+              <p class="card-desc">학생 할인 프로그램 있음. 가격 경쟁력. €12~25/월</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Iliad</h3>
+              <p class="card-desc">저가 옵션. 온라인 약정만 가능. €5~15/월</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">UNISI 와이파이</h3>
+              <p class="card-desc">대학 학생이면 무료 와이파이 이용 가능</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>병원 및 약국</h2>
+        <ul>
+          <li><strong>국립의료보험(SSN):</strong> UNISI 학생용 가입 가능. 거의 무료</li>
+          <li><strong>대학 의료센터(Infermeria):</strong> 학생 기본 의료 제공</li>
+          <li><strong>종합병원:</strong> Santa Maria alle Scotte Hospital (도시 중심부)</li>
+          <li><strong>약국:</strong> 도시 내 여러 곳. 처방약 및 일반약 판매</li>
+          <li><strong>응급실:</strong> Pronto Soccorso at Santa Maria (112 전화)</li>
+          <li><strong>의료비:</strong> SSN 등록 시 거의 무료, 미등록 시 €30~60</li>
+        </ul>
+
+        <h2>대학 정보</h2>
+        <ul>
+          <li><strong>University of Siena (UNISI):</strong> 이탈리아 역사 오래된 대학 중 하나</li>
+          <li><strong>단과대:</strong> 경제학, 의학, 약학, 엔지니어링, 인문학 등</li>
+          <li><strong>국제학생:</strong> Erasmus+, 교환학생 프로그램 활발</li>
+          <li><strong>등록금:</strong> EU 학생 €1000~3000, 비EU 학생 €4000~6000/년</li>
+          <li><strong>학생 할인:</strong> 교통, 영화, 박물관, 카페 할인 가능</li>
+        </ul>
+
+        <h2>주의사항</h2>
+        <ul>
+          <li>작은 도시라 모두가 아는 분위기 (프라이버시 상대적 적음)</li>
+          <li>상점 대부분 13시~16시 점심시간 폐점</li>
+          <li>겨울은 춥고 습함 (난방비 높을 수 있음)</li>
+          <li>여름(7~8월)은 많은 주민과 학생이 떠남</li>
+          <li>도시 내 좁은 골목, 경사 많음 (이동 시 주의)</li>
+          <li>파이오(Palio) 기간(7월, 8월)은 도시 혼잡</li>
+        </ul>
+
+        <h2>생활 팁</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🚲 자전거 팁</h3>
+              <p class="card-desc">자전거 가장 실용적 이동 수단. BiSi 공유 서비스 추천. 헬멧 착용 권장. 잠금 안전 중요.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🎓 학생 팁</h3>
+              <p class="card-desc">UNISI 학생증 많은 할인 받을 수 있음. 국제학생 오피스서 지원받기. ESN(학생 교환 네트워크) 가입 권장.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🏪 마트 팁</h3>
+              <p class="card-desc">시장에서 신선 제품 저렴. 주말 오전 붐빔. 도시 외곽 대형마트 버스 이용 추천 (가격 저렴).</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🌃 커뮤니티 팁</h3>
+              <p class="card-desc">작은 도시라 커뮤니티 중요. Facebook 그룹, 카페(bar)에서 사람 만나기. 현지 축제 참여하면 좋음.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">🍷 여행 팁</h3>
+              <p class="card-desc">토스카나 와인 지역. 주말에 인근 도시 여행 쉬움 (피렌체 1시간, 볼로냐 1.5시간). 와인 투어 추천.</p>
+            </div>
+          </article>
+        </div>
+
+        <h2>구글맵에서 보기</h2>
+        <p>
+          <a class="btn btn-primary" href="https://maps.google.com/maps?q=Siena,+Italia" target="_blank" rel="noopener noreferrer">
+            🗺️ Google Maps에서 시에나 지도 보기
+          </a>
+        </p>
+
+        <div class="back-actions">
+          <a class="btn btn-secondary" href="../index.html">메인으로</a>
+          <a class="btn btn-primary" href="./city-milano.html">밀라노 가이드</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="푸터 링크">
+        <a href="../about.html">About</a>
+        <a href="../about.html#contact">문의</a>
+        <a href="./life.html">생활 정보</a>
+      </nav>
+      <p class="footer-copy">© 2026 Sopravvivere in Italia</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

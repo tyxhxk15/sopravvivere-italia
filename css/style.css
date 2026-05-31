@@ -1,0 +1,573 @@
+/* ============================================================
+   style.css — Sopravvivere in Italia
+   모바일 우선(Mobile-First) 기본 스타일
+   브레이크포인트는 responsive.css에서 처리
+   ============================================================ */
+
+/* ──────────────────────────────────────────────
+   1. 디자인 토큰 (CSS 커스텀 프로퍼티)
+   ────────────────────────────────────────────── */
+:root {
+  /* 컬러 */
+  --color-green-dark:   #1a5c36;
+  --color-green:        #2d6a4f;
+  --color-green-light:  #52b788;
+  --color-green-pale:   #d8f3dc;
+  --color-red:          #c0523f;
+  --color-red-pale:     #fbe8e5;
+
+  --color-bg:           #ffffff;
+  --color-bg-muted:     #f7f4f0;
+  --color-bg-dark:      #1a1a1a;
+
+  --color-text:         #1a1a1a;
+  --color-text-muted:   #5a5a5a;
+  --color-text-light:   #8a8a8a;
+  --color-border:       #e2ddd8;
+
+  /* 타이포 */
+  --font-sans: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR',
+               system-ui, -apple-system, sans-serif;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+
+  /* 스케일 */
+  --text-xs:   0.75rem;   /*  12px */
+  --text-sm:   0.875rem;  /*  14px */
+  --text-base: 1rem;      /*  16px */
+  --text-lg:   1.125rem;  /*  18px */
+  --text-xl:   1.25rem;   /*  20px */
+  --text-2xl:  1.5rem;    /*  24px */
+  --text-3xl:  1.875rem;  /*  30px */
+  --text-4xl:  2.25rem;   /*  36px */
+
+  /* 간격 */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* 반경 */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-full: 9999px;
+
+  /* 그림자 */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+  --shadow-md:  0 4px 12px rgba(0,0,0,.10), 0 2px 4px rgba(0,0,0,.06);
+  --shadow-lg:  0 8px 24px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.07);
+
+  /* 트랜지션 */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+
+  /* 레이아웃 */
+  --container-max:  1200px;
+  --container-px:   var(--space-4);
+  --header-height:  56px;
+}
+
+/* ──────────────────────────────────────────────
+   2. 글로벌 기본값
+   ────────────────────────────────────────────── */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* ──────────────────────────────────────────────
+   3. 레이아웃 유틸리티
+   ────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-px);
+}
+
+/* ──────────────────────────────────────────────
+   4. 접근성
+   ────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  z-index: 9999;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-green-dark);
+  color: #fff;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+  transition: top var(--transition-fast);
+}
+.skip-link:focus {
+  top: var(--space-2);
+}
+
+/* ──────────────────────────────────────────────
+   5. 헤더
+   ────────────────────────────────────────────── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  gap: var(--space-3);
+}
+
+/* 햄버거 버튼 */
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: var(--text-xl);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  transition: background var(--transition-fast);
+  flex-shrink: 0;
+}
+.icon-btn:hover,
+.icon-btn:focus-visible {
+  background: var(--color-bg-muted);
+}
+
+/* 브랜드 로고 */
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  gap: 1px;
+}
+.brand-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-green-dark);
+  letter-spacing: -0.02em;
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+.brand-sub {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* 헤더 우측 */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.badge {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* ──────────────────────────────────────────────
+   6. 네비게이션
+   ────────────────────────────────────────────── */
+.site-nav {
+  /* 모바일: 기본 숨김 */
+  display: none;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+.site-nav.is-open {
+  display: block;
+}
+
+.nav-inner {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--space-3);
+}
+.nav-inner a {
+  padding: var(--space-3) var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.nav-inner a:hover,
+.nav-inner a[aria-current="page"] {
+  background: var(--color-green-pale);
+  color: var(--color-green-dark);
+}
+
+/* ──────────────────────────────────────────────
+   7. 버튼
+   ────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1;
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  transition:
+    background  var(--transition-base),
+    color       var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow  var(--transition-base),
+    transform   var(--transition-fast);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Primary: 초록 채우기 */
+.btn-primary {
+  background: var(--color-green-dark);
+  color: #fff;
+  border-color: var(--color-green-dark);
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--color-green);
+  border-color: var(--color-green);
+  box-shadow: 0 4px 14px rgba(45,106,79,.35);
+}
+
+/* Secondary: 테두리 스타일 */
+.btn-secondary {
+  background: transparent;
+  color: var(--color-green-dark);
+  border-color: var(--color-green-dark);
+}
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: var(--color-green-pale);
+  box-shadow: 0 4px 14px rgba(45,106,79,.15);
+}
+
+/* 텍스트 링크 */
+.link {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-green-dark);
+  transition: color var(--transition-fast);
+}
+.link:hover {
+  color: var(--color-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ──────────────────────────────────────────────
+   8. 히어로 섹션
+   ────────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(
+    160deg,
+    var(--color-green-dark) 0%,
+    var(--color-green) 60%,
+    var(--color-green-light) 100%
+  );
+  color: #fff;
+  padding-block: var(--space-16) var(--space-12);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  /* 배경 장식 */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 80% 20%, rgba(255,255,255,.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-kicker {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: .8;
+  margin-bottom: var(--space-3);
+}
+.hero-title {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-4);
+}
+.hero-desc {
+  font-size: var(--text-base);
+  line-height: 1.75;
+  opacity: .85;
+  max-width: 52ch;
+  margin-bottom: var(--space-8);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+/* 히어로 안에서는 버튼 색 반전 */
+.hero-actions .btn-primary {
+  background: #fff;
+  color: var(--color-green-dark);
+  border-color: #fff;
+}
+.hero-actions .btn-primary:hover {
+  background: var(--color-green-pale);
+  border-color: var(--color-green-pale);
+  box-shadow: 0 4px 14px rgba(0,0,0,.20);
+}
+.hero-actions .btn-secondary {
+  color: #fff;
+  border-color: rgba(255,255,255,.6);
+}
+.hero-actions .btn-secondary:hover {
+  background: rgba(255,255,255,.15);
+  border-color: #fff;
+  box-shadow: none;
+}
+
+/* ──────────────────────────────────────────────
+   9. 섹션 공통
+   ────────────────────────────────────────────── */
+.section {
+  padding-block: var(--space-12);
+}
+.section-muted {
+  background: var(--color-bg-muted);
+}
+
+.section-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+.section-head .section-title {
+  margin-bottom: 0;
+}
+
+/* ──────────────────────────────────────────────
+   10. 카드 그리드
+   ────────────────────────────────────────────── */
+.card-grid {
+  display: grid;
+  /* 모바일: 1열 */
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* ──────────────────────────────────────────────
+   11. 카드 컴포넌트
+   ────────────────────────────────────────────── */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow var(--transition-base),
+    transform  var(--transition-base),
+    border-color var(--transition-base);
+  text-decoration: none;
+  color: var(--color-text);
+}
+.card:hover,
+.card:focus-visible {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--color-green-light);
+}
+.card:active {
+  transform: translateY(0);
+}
+
+.card-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-green-pale);
+  border-radius: var(--radius-md);
+}
+.card-body {
+  flex: 1;
+  min-width: 0;
+}
+.card-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+  line-height: 1.3;
+}
+.card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ──────────────────────────────────────────────
+   12. 포스트 리스트
+   ────────────────────────────────────────────── */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: var(--color-text);
+  transition:
+    box-shadow   var(--transition-base),
+    border-color var(--transition-base),
+    transform    var(--transition-base);
+}
+.post:hover,
+.post:focus-visible {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-green-light);
+  transform: translateX(3px);
+}
+
+.post-thumb {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-green-pale);
+  border-radius: var(--radius-sm);
+}
+.post-body {
+  flex: 1;
+  min-width: 0;
+}
+.post-title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+}
+.post-arrow {
+  font-size: var(--text-xl);
+  color: var(--color-text-light);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+.post:hover .post-arrow {
+  transform: translateX(3px);
+  color: var(--color-green-dark);
+}
+
+/* ──────────────────────────────────────────────
+   13. 푸터
+   ────────────────────────────────────────────── */
+.site-footer {
+  background: var(--color-bg-dark);
+  color: rgba(255,255,255,.7);
+  padding-block: var(--space-8);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2) var(--space-5);
+}
+.footer-nav a {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,.6);
+  transition: color var(--transition-fast);
+}
+.footer-nav a:hover {
+  color: #fff;
+}
+.footer-nav a[aria-disabled="true"] {
+  cursor: default;
+  opacity: .4;
+  pointer-events: none;
+}
+
+.footer-copy {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,.35);
+}
