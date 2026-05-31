@@ -291,19 +291,41 @@
 
 <body>
   <!-- 공통 헤더 -->
+  
   <header class="site-header">
-    <div class="site-header__inner">
-      <a href="index.html" class="site-header__logo">soppravivere-It</a>
-      <nav class="site-nav" aria-label="주 메뉴">
-        <ul class="site-nav__list">
-          <li><a href="life.html" class="site-nav__link site-nav__link--active" aria-current="page">생활</a></li>
-          <li><a href="culture.html" class="site-nav__link">문화</a></li>
-          <li><a href="language.html" class="site-nav__link">언어</a></li>
-          <li><a href="community.html" class="site-nav__link">커뮤니티</a></li>
-        </ul>
-      </nav>
+    <div class="container header-inner">
+      <button
+        class="icon-btn"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        id="menuBtn"
+      >
+        ☰
+      </button>
+
+      <a class="brand" href="../index.html">
+        <span class="brand-title">Sopravvivere</span>
+        <span class="brand-sub">in Italia</span>
+      </a>
+
+      <div class="header-right">
+        <span class="badge" aria-label="이탈리아">🇮🇹</span>
+      </div>
     </div>
+
+    <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+      <div class="container nav-inner">
+        <a aria-current="page" href="./settlement.html">정착</a>
+        <a href="./life.html">생활</a>
+        <a href="./italian.html">이탈리아어 표현</a>
+        <a href="./city-milano.html">도시</a>
+        <a href="../about.html">About</a>
+      </div>
+    </nav>
   </header>
+
 
   <!-- 본문 -->
   <main class="page">
